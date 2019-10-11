@@ -53,7 +53,7 @@ A few terms to remember -
 | Term | Definition |
 | -----|------------|
 | auth token | A token, used in lieu of user+password credentials, to make API requests |
-| grant code | A code that can be exchanged for a auth token |
+| grant code | A code that can be exchanged for an auth token |
 | client id | Unique identifier for each client |
 | client secret| A secret key, to be used to exchange codes for tokens |
 
@@ -61,7 +61,8 @@ A few terms to remember -
 
 ### Grant Code Flow (frontend + backend clients)
 This will get you a grant code (that can be exchanged for an auth token).
-Redirect the user to the below URL on the frontend
+Redirect the 
+to the below URL on the frontend
 ```
 GET
 http://localhost:3838/oauth/authorize?
@@ -121,7 +122,7 @@ New user signup
 User profile data of logged in user
 
 #### `/user/{userid}`
-User profie data (only public data) of any user
+User profile data (only public data) of any user
 
 #### `/clients`
 All clients created by currently logged in user
